@@ -2,6 +2,8 @@
 
 import type { NextPage } from "next";
 import { BaseLayout, Nftlist } from "../components";
+//import json file
+import nfts from "../content/meta.json";
 
 const Home: NextPage = () => {
   return (
@@ -19,7 +21,8 @@ const Home: NextPage = () => {
               Mint a NFT to get unlimited ownership forever!
             </p>
           </div>
-          <Nftlist />
+          {/* pass nfts json as prop of NftList */}
+          <Nftlist nfts={nfts} />
         </div>
       </div>
     </BaseLayout>
