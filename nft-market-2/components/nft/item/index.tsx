@@ -58,22 +58,6 @@ const NftItem: FunctionComponent<NftItemProps> = ({ item }) => {
                 </dd>
               </div>
             ))}
-            <div className="flex flex-col px-4 pt-4">
-              <dt className="order-2 text-sm font-medium text-gray-500">
-                Health
-              </dt>
-              <dd className="order-1 text-xl font-extrabold text-indigo-600">
-                100
-              </dd>
-            </div>
-            <div className="flex flex-col px-4 pt-4">
-              <dt className="order-2 text-sm font-medium text-gray-500">
-                Attack
-              </dt>
-              <dd className="order-1 text-xl font-extrabold text-indigo-600">
-                40
-              </dd>
-            </div>
           </dl>
         </div>
         <div>
