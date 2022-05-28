@@ -4,6 +4,7 @@ import type { NextPage } from "next";
 import { BaseLayout, Nftlist } from "../components";
 //import json file
 import nfts from "../content/meta.json";
+import { NftMetaData } from "../types/nft";
 
 const Home: NextPage = () => {
   return (
@@ -22,7 +23,7 @@ const Home: NextPage = () => {
             </p>
           </div>
           {/* pass nfts json as prop of NftList */}
-          <Nftlist nfts={nfts} />
+          <Nftlist nfts={nfts as NftMetaData[]} />
         </div>
       </div>
     </BaseLayout>
